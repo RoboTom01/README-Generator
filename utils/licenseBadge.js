@@ -1,8 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// TODO: Create a function that returns the license link
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-
+// Function that returns a license badge based on which license is passed in, with the license link. If there is no license, returns an empty string.
 
 module.exports = 
 function licenseBadge(value) {

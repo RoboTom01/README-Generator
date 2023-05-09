@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 // const util = require("util");
@@ -8,7 +8,7 @@ const licenseBadge = require("./utils/licenseBadge");
 
 // import { generateMarkdown, licenseBadge } from './utils/generateMarkdown.js';
 
-// TODO: Create an array of questions for user input
+// Array of questions for user input
 const questions = [
     {
         type: "input",
@@ -66,8 +66,7 @@ const questions = [
     },
   ];
 
-// TODO: Create a function to write README file
-// TODO: Create a function to initialize app
+// Function to initialize app and write README file
 async function init() {
     try {
         const answers = await inquirer.prompt(questions);
