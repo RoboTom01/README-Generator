@@ -3,8 +3,8 @@
 module.exports = 
 function generateMarkdown(data) {
   return `# ${data.title}  
-  ${data.description}  
-  ${data.license}  
+  ${data.description}<br /> 
+  ${data.license}<br />
   
 
   ---
@@ -21,31 +21,31 @@ function generateMarkdown(data) {
   ---
 
   ## Installation:
-  ${data.installation}
+  ${data.installation}<br />
 
 
   ---
 
   ## Usage
-  ${data.usage}
+  ${data.usage}<br />
   
 
   ---
 
   ## License
-  ${data.license}
+  ${data.license}<br />
 
 
   ---
 
   ## Contributing:
-  ${data.contributing}
+  ${data.contributing}<br />
 
 
   ---
 
   ## Tests:
-  ${data.test}
+  ${data.test}<br />
 
 
   ---

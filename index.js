@@ -69,10 +69,14 @@ const questions = [
 // Function to initialize app and write README file
 async function init() {
     try {
+        console.log("Tip: You can use <br /> as a line break.")
         const answers = await inquirer.prompt(questions);
+        // Takes license answer and applies the correct name, link, and badge for the README data.
         answers.license = licenseBadge(answers.license);
+        // Finalizes data into "let"
         let readMeData = generateMarkdown(answers);
         console.log(readMeData);
+        // Uses fs to write new .md file
         fs.writeFileSync('new-README.md', readMeData)
     } catch (err) {
         throw err;
